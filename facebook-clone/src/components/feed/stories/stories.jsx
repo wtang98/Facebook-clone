@@ -17,10 +17,6 @@ const Stories = () => {
             profileSrc="https://img.buzzfeed.com/buzzfeed-static/static/2019-01/23/13/asset/buzzfeed-prod-web-06/sub-buzz-31148-1548266852-1.jpg?output-format=auto&output-quality=auto"
             title="Roll Safe"
             />
-            <Story image = "https://miro.medium.com/max/1400/1*7-f2JsSOV6YKtuxMjgSkbg.jpeg"
-            profileSrc="https://www.highlandernews.org/wp-content/uploads/2016/02/ops.meme_.nba_-768x576.jpg"
-            title="huh??"
-            />
             <Story image = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHDOksrwN7pDuGkNIgqdqVU4okmutHU4P9DA&usqp=CAU"
             profileSrc="https://ichef.bbci.co.uk/news/976/cpsprodpb/16620/production/_91408619_55df76d5-2245-41c1-8031-07a4da3f313f.jpg"
             title="Pepe"

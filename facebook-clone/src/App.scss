@@ -1,7 +1,10 @@
 *{
 	margin: 0;
 }
-.App {
-    
+.app{
+	background-color: #f1f2f5;
+    &__body{
+		display: flex;
+	}
 }
 

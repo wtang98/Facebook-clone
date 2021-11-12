@@ -1,0 +1,27 @@
+.widgets{
+    width: 400px;
+    height: fit-content;
+    padding: 25px 10px;
+    flex: 0.33 1;
+    color: gray;
+    &__contacts{
+        &-top{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            &-items{
+                display: flex;
+            }
+        }
+        &-bottom{
+            margin-top: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color:lightgray;
+            border-radius: 5px;
+            height: 30px;
+        }
+    }
+}
