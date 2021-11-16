@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/Facebook-clone/static/css/main.39e040ef.chunk.css",
+    "main.js": "/Facebook-clone/static/js/main.3194ab14.chunk.js",
+    "main.js.map": "/Facebook-clone/static/js/main.3194ab14.chunk.js.map",
+    "runtime-main.js": "/Facebook-clone/static/js/runtime-main.d17d9d92.js",
+    "runtime-main.js.map": "/Facebook-clone/static/js/runtime-main.d17d9d92.js.map",
+    "static/js/2.9c7fe92c.chunk.js": "/Facebook-clone/static/js/2.9c7fe92c.chunk.js",
+    "static/js/2.9c7fe92c.chunk.js.map": "/Facebook-clone/static/js/2.9c7fe92c.chunk.js.map",
+    "static/js/3.41b2e208.chunk.js": "/Facebook-clone/static/js/3.41b2e208.chunk.js",
+    "static/js/3.41b2e208.chunk.js.map": "/Facebook-clone/static/js/3.41b2e208.chunk.js.map",
+    "index.html": "/Facebook-clone/index.html",
+    "static/css/main.39e040ef.chunk.css.map": "/Facebook-clone/static/css/main.39e040ef.chunk.css.map",
+    "static/js/2.9c7fe92c.chunk.js.LICENSE.txt": "/Facebook-clone/static/js/2.9c7fe92c.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.d17d9d92.js",
+    "static/js/2.9c7fe92c.chunk.js",
+    "static/css/main.39e040ef.chunk.css",
+    "static/js/main.3194ab14.chunk.js"
+  ]
+}
