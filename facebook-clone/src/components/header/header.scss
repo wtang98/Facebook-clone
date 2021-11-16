@@ -7,9 +7,12 @@
     z-index: 100;
     top: 0;
     box-shadow: 0px 5px 8px -9px rgba(0,0,0,0.75);
+    max-width: 98%;
+    max-height: 56px;
     &__left{
         display: flex;
         justify-content: space-evenly;
+        align-items: center;
         &>img{
             height: 40px;
         }
@@ -29,8 +32,8 @@
     }
     &__center{
         display: flex;
-        flex: 1;
         justify-content: center;
+        // overflow: hidden;
         &-option{
             color: gray;
             display: flex;
@@ -65,4 +68,14 @@
         color: #2e81f4;
     }
     border-bottom: 4px solid #2e81f4;
+}
+
+@media (max-width: 1090px) {
+    .header{
+        &__right{
+            &-info{
+                display: none;
+            }
+        }
+    }
 }

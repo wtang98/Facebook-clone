@@ -8,12 +8,11 @@ const Post = (props) => {
 
     return (
         <div className="post">
-
             <div className="post__top">
                 <Avatar src={profilePic} className="post__top-avatar"/>
                 <div className="post__top-info">
                     <h3>{username}</h3>
-                    <p>time stamp</p>
+                    <p>{new Date(timestamp?.toDate()).toUTCString()}</p>
                 </div>
             </div>
 
@@ -42,7 +41,6 @@ const Post = (props) => {
                     <AccountCircle/>
                     <ExpandMoreOutlined/>
                 </div>
-
             </div>
         </div>
     )

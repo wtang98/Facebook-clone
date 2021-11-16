@@ -4,16 +4,17 @@ import Widgets from './components/feed/widgets/widgets';
 import Header from './components/header/header';
 import Login from './components/login/login';
 import Sidebar from './components/sidebar/sidebar';
+import { useStateValue } from './jses/StateProvider';
 
 const App = () => {
-	const user = null;
+	const [{user}, dispatch]=useStateValue();
 
 	return (
 		<div className="app">
 			{!user ? (<Login/>
 			):(
 				<>
-					<Header />
+					<Header/>
 					<div className="app__body">
 						<Sidebar />
 						<Feed />

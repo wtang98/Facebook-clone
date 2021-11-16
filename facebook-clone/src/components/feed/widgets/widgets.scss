@@ -1,5 +1,5 @@
 .widgets{
-    width: 400px;
+    max-width: 360px;
     height: fit-content;
     padding: 25px 10px;
     flex: 0.33 1;
@@ -9,9 +9,16 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
+            text-align: center;
             width: 100%;
             &-items{
                 display: flex;
+                justify-content: space-between;
+                align-items: center;
+                text-align: center;
+                &>.MuiSvgIcon-root{
+                    margin-right: 5px;
+                }
             }
         }
         &-bottom{
@@ -23,5 +30,10 @@
             border-radius: 5px;
             height: 30px;
         }
+    }
+}
+@media (max-width: 880px) {
+    .widgets{
+        display: none;
     }
 }

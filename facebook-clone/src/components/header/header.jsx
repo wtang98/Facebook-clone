@@ -9,8 +9,12 @@ import NotificationsActiveIcon from '@material-ui/icons/NotificationsActive';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import { StorefrontOutlined, SubscriptionsOutlined, SupervisedUserCircle } from '@material-ui/icons';
 import { Avatar, IconButton } from '@material-ui/core';
+import { useStateValue } from '../../jses/StateProvider';
 
 const Header = () => {
+
+    const [{user}, dispatch ]= useStateValue();
+
     return ( 
         <div className="header">
 
@@ -26,24 +30,21 @@ const Header = () => {
                 <div className="header__center-option active">
                     <HomeIcon/>
                 </div>
-                <div className="header__center-option active">
-                    <Flag/>
-                </div>
-                <div className="header__center-option active">
+                <div className="header__center-option">
                     <SubscriptionsOutlined/>
                 </div>
-                <div className="header__center-option active">
+                <div className="header__center-option">
                     <StorefrontOutlined/>
                 </div>
-                <div className="header__center-option active">
+                <div className="header__center-option">
                     <SupervisedUserCircle/>
                 </div>
             </div>
 
             <div className="header__right">
                 <div className="header__right-info">
-                    <Avatar/>
-                    <h4>Wei-Tong Tang</h4>
+                    <Avatar src = {user.photoURL}/>
+                    <h4>{user.displayName}</h4>
                 </div>
 
                 <IconButton>

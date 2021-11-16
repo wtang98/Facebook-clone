@@ -1,26 +1,33 @@
 import { Button } from '@material-ui/core';
 import React from 'react';
 import './login.scss';
-// import {auth,provider} from '../../firebase';
-import firebase from '../../Firebase';
+import {auth,provider} from '../../jses/Firebase';
+import firebase from '../../jses/Firebase';
+import { actionTypes } from '../../jses/Reducer';
+import { useStateValue } from '../../jses/StateProvider';
 
 const Login = () => {
 
+    const [state, dispatch]= useStateValue();
+
     const signIn = () => {
-        // auth
-        //     .signInWithPopup(provider)
-        //     .then((result) => {
-        //         console.log(result)
-        //     })
-        //     .catch((error) => alert(error.message));
-        const googleProvider = new firebase.auth.GoogleAuthProvider();
-        firebase.auth().signInWithPopup(googleProvider)
-        .then((re) => {
-            console.log(re);
-        })
-        .catch((err) => {
-            console.log(err);
-        })
+        auth
+            .signInWithPopup(provider)
+            .then((result) => {
+                dispatch({
+                    type: actionTypes.SET_USER,
+                    user: result.user,
+                })
+            })
+            .catch((error) => alert(error.message));
+        // const googleProvider = new firebase.auth.GoogleAuthProvider();
+        // firebase.auth().signInWithPopup(googleProvider)
+        // .then((re) => {
+        //     console.log(re);
+        // })
+        // .catch((err) => {
+        //     console.log(err);
+        // })
     }
 
     return (
